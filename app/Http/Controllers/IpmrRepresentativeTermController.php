@@ -50,7 +50,7 @@ class IpmrRepresentativeTermController extends Controller
         $required = $partial ? 'sometimes' : 'required';
 
         return [
-            'representative_id' => [$required, 'integer', 'exists:drip_ipmr_representatives,id'],
+            'representative_id' => [$required, 'integer', 'exists:ipmr_representatives,id'],
             'term' => [$required, 'string', 'max:255'],
             'status' => [$required, 'in:SEATED,NOT SEATED'],
             'benefits_received' => [$required, 'in:FULL,PARTIAL,HONORARIA'],
