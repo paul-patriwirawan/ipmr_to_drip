@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class IpmrRepresentativeTerm extends Model
 {
-    protected $table = 'drip_ipmr_representative_terms';
+    protected $table = 'ipmr_representative_terms';
 
     protected $fillable = [
         'representative_id',

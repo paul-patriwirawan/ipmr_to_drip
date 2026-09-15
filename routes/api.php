@@ -14,6 +14,7 @@ Route::prefix('v1')->middleware(\App\Http\Middleware\AuthenticateWithApiSecret::
     Route::apiResource('ipmr', \App\Http\Controllers\IpmrController::class)->names('ipmr');
     Route::apiResource('ipmr_representatives', \App\Http\Controllers\IpmrRepresentativeController::class);
     Route::apiResource('ipmr_representative_terms', \App\Http\Controllers\IpmrRepresentativeTermController::class);
+    Route::apiResource('ipmr_representative_documents', \App\Http\Controllers\IpmrRepresentativeDocumentController::class);
 });
 
 Route::get('/user', function (Request $request) {

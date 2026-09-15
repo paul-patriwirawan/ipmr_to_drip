@@ -9,7 +9,7 @@ class IpmrRepresentative extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'drip_ipmr_representatives';
+    protected $table = 'ipmr_representatives';
 
     protected $fillable = [
         'ipmr_id',

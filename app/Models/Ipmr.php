@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ipmr extends Model
 {
-    protected $table = 'drip_ipmr';
+    protected $table = 'ipmr';
 
     protected $fillable = [
         'ancestral_domain_id',
